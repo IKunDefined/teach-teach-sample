@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="discription" content="这一个测试网页，用来熟悉html的基本结构以及html的基本语法"/>
+    <meta name="keywords" content="测试,学习,html,语法,基本结构,练习,示范文件">
+    <title>测试网页</title>
+    <meta charset="utf-8"/>
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+      }
+      .header-part {
+        height: 10%;
+        background: #6cf;
+        transition: all .5s;
+        width: 100%;
+      }
+      .header-part > .header-part-left {
+        background: #fff;
+        /* float: left; */
+      }
+      .header-part > .header-part-right {
+        /* float: right; */
+        background: #fff;
+      }
+      .nav-part {
+        height: 5%;
+        background: #cf6;
+      }
+      .main-part {
+        height: 70%;
+        background: #c6d;
+      }
+      .footer-part {
+        height: 15%;
+        background: #000;
+      }
+    </style>
   </head>
   <body>
+    <div class="header-part">
+      <div class="header-part-left">
+        左边
+        321<span style="color: red">3</span>76128376873621
+      </div>
+      <div class="header-part-right">右边</div>
+    </div>
+    <div class="nav-part"></div>
+    <div class="main-part"></div>
+    <div class="footer-part"></div>
+    <!-- <script>
+      let headerPart = document.getElementsByClassName('header-part')[0]
+      setTimeout(() => {
+        headerPart.style.height = '20%'
+      }, 1000)
+      headerPart.onclick = () => {
+        headerPart.style.height = '10%'
+      }
+    </script> -->
   </body>
 </html>
